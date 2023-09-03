@@ -1,0 +1,22 @@
+@use "menu";
+@use "home";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.bryan-home-image {
+    border: 3px solid red;
+    width: 400px;
+}
+
+.page-content {
+    flex: 1;
+}

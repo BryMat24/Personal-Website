@@ -1,0 +1,125 @@
+#menu {
+  display: flex;
+  justify-content: end;
+  padding: 20px 20px;
+  border-bottom: 2px solid black;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.hamburger-menu input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 40px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.hamburger-menu span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(4px, -5px);
+}
+
+.hamburger-menu input:checked ~ span:nth-child(3) {
+  opacity: 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(1px, 7px);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateX(100%);
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  background: white;
+  max-width: 250px;
+  width: 100%;
+}
+.sidebar::before {
+  position: absolute;
+  top: -3px;
+  background: white;
+  bottom: -3px;
+  right: 0;
+  z-index: -1;
+  width: 40em;
+  content: "";
+  transform: skewX(-27deg) translateX(-40%);
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+.sidebar.active::before {
+  opacity: 1;
+}
+
+.overlay.active {
+  opacity: 1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.bryan-home-image {
+  border: 3px solid red;
+  width: 400px;
+}
+
+.page-content {
+  flex: 1;
+}
+
+/*# sourceMappingURL=output.css.map */
