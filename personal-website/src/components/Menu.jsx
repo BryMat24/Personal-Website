@@ -1,11 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
     const [isOpen, setOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggleOpen = () => {
         setOpen(!isOpen);
+    };
+
+    const handleNavigate = (path) => {
+        navigate(path);
+        toggleOpen();
     };
 
     return (
@@ -19,15 +25,27 @@ const Menu = () => {
                 <span></span>
             </div>
             <div className={`sidebar ${isOpen ? "active" : ""}`}>
-                <Link to={"/"} className="links" id="links">
+                <div
+                    onClick={() => handleNavigate("/")}
+                    className="links"
+                    id="links"
+                >
                     &lt;Home /&gt;
-                </Link>
-                <Link to={"/about"} className="links" id="links">
+                </div>
+                <div
+                    onClick={() => handleNavigate("/about")}
+                    className="links"
+                    id="links"
+                >
                     &lt;About /&gt;
-                </Link>
-                <Link to={"/portfolio"} className="links" id="links">
+                </div>
+                <div
+                    onClick={() => handleNavigate("/portfolio")}
+                    className="links"
+                    id="links"
+                >
                     &lt;Portfolio /&gt;
-                </Link>
+                </div>
             </div>
             <div
                 className={`overlay ${isOpen ? "active" : ""}`}
