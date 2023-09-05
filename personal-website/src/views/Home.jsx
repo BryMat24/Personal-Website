@@ -28,7 +28,17 @@ const Home = () => {
     }, [vantaEffect]);
     return (
         <div ref={myRef} id="home">
-            Foreground content goes here
+            <div className="bryan-logo">
+                <div className="logo-title">
+                    <div className="char">B</div>
+                    <div className="char">M</div>
+                </div>
+            </div>
+            <section className="hero">
+                <div>Bryan</div>
+                <div>Matthew</div>
+                <div>Student / Aspiring Software Engineer</div>
+            </section>
         </div>
     );
 };

@@ -2,12 +2,10 @@
 $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 
 #menu {
-    display: flex;
-    justify-content: end;
-    padding: 20px 20px;
     position: fixed;
-    z-index: 1;
-    right: 10px;
+    z-index: 2;
+    top: 30px;
+    right: 30px;
 }
 
 .hamburger-menu {
@@ -29,24 +27,26 @@ $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .hamburger-menu span:nth-child(1) {
-    transform-origin: 0 0;
+    width: 50%;
 }
 
 .hamburger-menu span:nth-child(3) {
-    transform-origin: 0 100%;
+    width: 75%;
 }
 
 .hamburger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(4px, -5px);
+    transform: rotate(45deg) translate(6px, 0px);
     background-color: white;
 }
 
 .hamburger-menu.active span:nth-child(2) {
-    opacity: 0;
+    transform: rotate(-45deg);
+    background-color: white;
 }
 
 .hamburger-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(1px, 7px);
+    width: 50%;
+    transform: translate(17px, -5px) rotate(45deg);
     background-color: white;
 }
 
@@ -64,7 +64,7 @@ $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     will-change: transform;
     transition: transform 0.5s $timing-function;
     background: $dark-red;
-    max-width: 270px;
+    max-width: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -89,27 +89,61 @@ $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
         transition: transform 0.5s $timing-function;
         opacity: 0;
     }
-    .links {
-        color: white;
-    }
 
     .links:nth-child(1) {
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         transition-delay: 0.1s;
-        transform: translateX(-100%);
+        transform: translateX(-30%);
         opacity: 0;
     }
 
     .links:nth-child(2) {
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         transition-delay: 0.15s;
-        transform: translateX(-100%);
+        transform: translateX(-40%);
     }
 
     .links:nth-child(3) {
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         transition-delay: 0.2s;
-        transform: translateX(-100%);
+        transform: translateX(-50%);
+    }
+
+    .links {
+        color: white;
+        white-space: nowrap;
+        font-size: 3.5rem;
+        margin-right: 80px;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        color: white;
+        background-image: linear-gradient(to right, #000, #000 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .links::before {
+        content: "";
+        width: 0;
+        height: 3px;
+        bottom: 5px;
+        left: 0;
+        bottom: -3px;
+        z-index: 0;
+        position: absolute;
+        background: $dark-brown;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .links:hover {
+        background-position: 0;
+        color: $dark-brown;
+    }
+
+    .links:hover::before {
+        width: 100%;
     }
 }
 

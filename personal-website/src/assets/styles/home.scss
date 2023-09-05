@@ -1,3 +1,129 @@
 #home {
     height: 100vh;
+    position: relative;
+}
+
+.hero {
+    padding-top: 220px;
+    padding-left: 80px;
+    color: white;
+}
+
+.hero div:nth-child(1),
+.hero div:nth-child(2) {
+    font-size: 8rem;
+}
+
+.hero div:nth-child(3) {
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+.bryan-logo {
+    $logo-width: 100px;
+    $logo-height: 60px;
+    border: 3px solid white;
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 80px;
+    width: $logo-width;
+    height: $logo-height;
+
+    &::after {
+        position: absolute;
+        border: 3px solid white;
+        content: "";
+        width: $logo-width;
+        height: $logo-height;
+        top: 5px;
+        left: 5px;
+    }
+
+    .logo-title {
+        padding-top: 3px;
+        padding-left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $logo-width;
+        height: $logo-height;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.hero div:nth-child(1) {
+    animation: moveright 1s ease-in-out 0.2s;
+}
+
+.hero div:nth-child(2) {
+    animation: moveright 1s ease-in-out 0.4s;
+}
+
+.hero div:nth-child(3) {
+    animation: moveright 1s ease-in-out 0.6s;
+}
+
+@keyframes moveright {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Use translateY to move vertically */
+        opacity: 1;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero div:nth-child(1),
+    .hero div:nth-child(2) {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        padding-top: 220px;
+        padding-left: 30px;
+        color: white;
+    }
+
+    .bryan-logo {
+        left: 30px;
+        $logo-width: 80px;
+        $logo-height: 40px;
+        width: $logo-width;
+        height: $logo-height;
+        border: 3px solid white;
+        display: flex;
+        align-items: center;
+
+        &::after {
+            position: absolute;
+            border: 3px solid white;
+            content: "";
+            width: $logo-width;
+            height: $logo-height;
+        }
+        .logo-title {
+            padding-top: 8px;
+            padding-left: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    .hero div:nth-child(1),
+    .hero div:nth-child(2) {
+        font-size: 4rem;
+    }
+
+    .hero div:nth-child(3) {
+        font-size: 1rem;
+        margin-left: 5px;
+    }
 }
