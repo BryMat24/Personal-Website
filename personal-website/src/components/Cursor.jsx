@@ -1,33 +1,41 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Cursor = () => {
-    const [cursorX, setCursorX] = useState();
-    const [cursorY, setCursorY] = useState();
+    const [cursorPosition, setCursorPosition] = useState({
+        dotX: 0,
+        dotY: 0,
+        outlineX: 0,
+        outlineY: 0,
+    });
 
     useEffect(() => {
+        const mouseMoveHandler = (e) => {
+            const { clientX, clientY } = e;
+            setCursorPosition({
+                dotX: clientX,
+                dotY: clientY,
+                outlineX: clientX - 15,
+                outlineY: clientY - 15,
+            });
+        };
+
         document.addEventListener("mousemove", mouseMoveHandler);
         return () => {
             document.removeEventListener("mousemove", mouseMoveHandler);
         };
-    });
+    }, []);
 
-    const mouseMoveHandler = (e) => {
-        setCursorX(e.clientX);
-        setCursorY(e.clientY);
-    };
+    const { dotX, dotY, outlineX, outlineY } = cursorPosition;
 
     return (
         <>
-            <div
-                className="cursor-dot"
-                style={{ left: cursorX, top: cursorY }}
-            ></div>
+            <div className="cursor-dot" style={{ left: dotX, top: dotY }}></div>
             <motion.div
                 className="cursor-outline"
                 animate={{
-                    x: cursorX - 15,
-                    y: cursorY - 15,
+                    x: outlineX,
+                    y: outlineY,
                 }}
                 transition={{ duration: 0.5 }}
             ></motion.div>
