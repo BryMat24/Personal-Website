@@ -38,6 +38,17 @@ const Home = () => {
                 <div>Matthew</div>
                 <div>Student / Aspiring Software Engineer</div>
             </section>
+            <div className="icons-container">
+                <div>
+                    <img src="/images/instagram.svg" alt="instagram-logo" />
+                </div>
+                <div>
+                    <img src="/images/github.svg" alt="github-logo" />
+                </div>
+                <div>
+                    <img src="/images/linkedin.svg" alt="linkedin-logo" />
+                </div>
+            </div>
         </div>
     );
 };

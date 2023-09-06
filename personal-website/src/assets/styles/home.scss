@@ -1,3 +1,5 @@
+@import "variables";
+
 #home {
     height: 100vh;
     position: relative;
@@ -11,7 +13,7 @@
 
 .hero div:nth-child(1),
 .hero div:nth-child(2) {
-    font-size: 8rem;
+    font-size: 7rem;
 }
 
 .hero div:nth-child(3) {
@@ -137,5 +139,27 @@
     .hero div:nth-child(3) {
         font-size: 1rem;
         margin-left: 5px;
+    }
+}
+
+.icons-container {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
+    div {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 50%;
+        transition: border-radius 0.3s ease-in-out;
+    }
+
+    div:hover {
+        border-radius: 10px;
     }
 }

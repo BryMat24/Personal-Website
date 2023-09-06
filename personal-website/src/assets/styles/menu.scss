@@ -62,7 +62,7 @@ $timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    transform: translateX(200%);
+    transform: translateX(300%);
     will-change: transform;
     transition: transform 0.5s $timing-function;
     background: $dark-red;

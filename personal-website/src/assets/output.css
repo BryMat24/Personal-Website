@@ -59,7 +59,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  transform: translateX(200%);
+  transform: translateX(300%);
   will-change: transform;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   background: #98465f;
@@ -200,7 +200,7 @@
 
 .hero div:nth-child(1),
 .hero div:nth-child(2) {
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 .hero div:nth-child(3) {
@@ -314,6 +314,26 @@
     margin-left: 5px;
   }
 }
+.icons-container {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+.icons-container div {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: border-radius 0.3s ease-in-out;
+}
+.icons-container div:hover {
+  border-radius: 10px;
+}
+
 #about-page {
   background-color: #212426;
   min-height: 100vh;
