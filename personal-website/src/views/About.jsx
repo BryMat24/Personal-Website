@@ -27,25 +27,28 @@ const About = () => {
 
     return (
         <div id="about-page">
-            <h1 className="about-title">&lt;About /&gt;</h1>
-            <section className="about-description">
-                <p>
-                    Hi there! I'm Bryan Matthew Rustardy, currently a sophomore
-                    at Nanyang Technological University majoring in Information
-                    Engineering.
-                </p>
-                <p>
-                    Growing up, I always had an affinity for everything tech
-                    related. As I progress through my studies, I have my sights
-                    set on a career in Web development. I'm excited about the
-                    opportunities this field offers to make a positive impact on
-                    society and contribute my skills and knowledge.
-                </p>
-                <p>
-                    Growing up, I always had an affinity for everything tech
-                    related. As I progress through my studies, I have my sights
-                    set on a career in Web development.
-                </p>
+            <section className="about-info">
+                <h1 className="about-title">&lt;About /&gt;</h1>
+                <div className="about-description">
+                    <p>
+                        Hi there! I'm Bryan Matthew Rustardy, currently a
+                        sophomore at Nanyang Technological University majoring
+                        in Information Engineering.
+                    </p>
+                    <p>
+                        Growing up, I always had an affinity for everything tech
+                        related. As I progress through my studies, I have my
+                        sights set on a career in Web development. I'm excited
+                        about the opportunities this field offers to make a
+                        positive impact on society and contribute my skills and
+                        knowledge.
+                    </p>
+                    <p>
+                        Thank you for visiting my portfolio. Feel free to reach
+                        out if you'd like to collaborate on a project.
+                    </p>
+                </div>
+                <img src="/images/bryan-image.png" alt="bryan image" />
             </section>
 
             <section className="techstack">
@@ -54,8 +57,13 @@ const About = () => {
                     ssr={true}
                     infinite={true}
                     autoPlay={true}
-                    autoPlaySpeed={3000}
-                    removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                    autoPlaySpeed={2000}
+                    removeArrowOnDeviceType={[
+                        "desktop",
+                        "tablet",
+                        "mobile",
+                        "tabletSmall",
+                    ]}
                 >
                     <div className="box">
                         <img
@@ -99,7 +107,7 @@ const About = () => {
                             src="https://vuejs.org/images/logo.png"
                             alt="vue-logo"
                         />
-                        <p>Vue JS</p>
+                        <p>Vue</p>
                     </div>
 
                     <div className="box">
@@ -107,7 +115,7 @@ const About = () => {
                             src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png"
                             alt="express-logo"
                         />
-                        <p>Vue</p>
+                        <p>Express</p>
                     </div>
 
                     <div className="box">

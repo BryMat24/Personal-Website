@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import TRUNK from "vanta/dist/vanta.trunk.min";
 import * as THREE from "three";
-// Make sure window.THREE is defined, e.g. by including three.min.js in the document head using a <script> tag
 
 const Home = () => {
     const [vantaEffect, setVantaEffect] = useState(null);
