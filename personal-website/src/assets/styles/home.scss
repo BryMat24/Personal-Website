@@ -9,16 +9,28 @@
     padding-top: 220px;
     padding-left: 80px;
     color: white;
-}
 
-.hero div:nth-child(1),
-.hero div:nth-child(2) {
-    font-size: 7rem;
-}
+    div:nth-child(1),
+    div:nth-child(2) {
+        font-size: 7rem;
+    }
 
-.hero div:nth-child(3) {
-    font-size: 1.3rem;
-    margin-left: 10px;
+    div:nth-child(3) {
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        border: 3px solid $dark-red;
+        font-weight: 600;
+        padding: 10px 30px;
+        font-size: 1.3rem;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
 }
 
 .bryan-logo {
