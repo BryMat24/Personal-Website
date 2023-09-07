@@ -4,6 +4,9 @@ const Portfolio = () => {
             <h1 className="porfolio-title">&lt;Portfolio /&gt;</h1>
             <section className="projects">
                 <div className="project-wrapper">
+                    <div className="project-title-tablet">
+                        <span>01.</span> IMDb User
+                    </div>
                     <div className="project-detail">
                         <div className="project-title">IMDb User</div>
                         <p className="project-description">
@@ -24,6 +27,9 @@ const Portfolio = () => {
                 </div>
 
                 <div className="project-wrapper">
+                    <div className="project-title-tablet">
+                        <span>02.</span> IMDb Admin
+                    </div>
                     <img src="./images/test.png" alt="project-img" />
                     <div className="project-detail">
                         <div className="project-title">IMDb Admin</div>
@@ -47,6 +53,9 @@ const Portfolio = () => {
                 </div>
 
                 <div className="project-wrapper">
+                    <div className="project-title-tablet">
+                        <span>03.</span> Shoppable
+                    </div>
                     <img src="./images/ecommerce.png" alt="project-img" />
                     <div className="project-detail">
                         <div className="project-title">Shoppable</div>
@@ -68,6 +77,9 @@ const Portfolio = () => {
                 </div>
 
                 <div className="project-wrapper">
+                    <div className="project-title-tablet">
+                        <span>04.</span> Sudoku
+                    </div>
                     <div className="project-detail">
                         <div className="project-title">Sudoku</div>
                         <p className="project-description">

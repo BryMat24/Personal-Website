@@ -100,6 +100,10 @@
     }
 }
 
+.project-title-tablet {
+    display: none;
+}
+
 @media (max-width: 1250px) {
     #portfolio-page {
         padding: 75px;
@@ -151,6 +155,7 @@
     .project-wrapper {
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 
     .project-wrapper:nth-child(even),
@@ -171,6 +176,22 @@
 
     .porfolio-title {
         font-size: 3.5rem;
+    }
+
+    .project-title {
+        display: none;
+    }
+
+    .project-title-tablet {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+
+        span {
+            font-size: 1.5rem;
+            color: $dark-red;
+        }
     }
 }
 
