@@ -91,8 +91,24 @@ $dark-brown: #212426;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1511px) {
     .about-info img {
         display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .about-info .about-title {
+        font-size: 3.5rem;
+    }
+
+    #about-page {
+        padding: 75px;
+    }
+}
+
+@media (max-width: 720px) {
+    #about-page {
+        padding: 30px;
     }
 }

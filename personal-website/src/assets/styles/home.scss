@@ -80,6 +80,28 @@ $dark-brown: #212426;
     animation: moveup 2s ease-in-out;
 }
 
+.icons-container {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
+    div {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 50%;
+        transition: border-radius 0.3s ease-in-out;
+    }
+
+    div:hover {
+        border-radius: 10px;
+    }
+}
+
 @keyframes moveright {
     0% {
         transform: translateX(-100px);
@@ -100,6 +122,12 @@ $dark-brown: #212426;
     100% {
         transform: translateY(0); /* Use translateY to move vertically */
         opacity: 1;
+    }
+}
+
+@media (max-width: 880px) {
+    .icons-container {
+        display: none !important;
     }
 }
 
@@ -131,8 +159,8 @@ $dark-brown: #212426;
             position: absolute;
             border: 3px solid white;
             content: "";
-            width: $logo-width;
-            height: $logo-height;
+            width: $logo-width - 5px;
+            height: $logo-height - 5px;
         }
         .logo-title {
             padding-top: 8px;
@@ -152,27 +180,5 @@ $dark-brown: #212426;
     .hero div:nth-child(3) {
         font-size: 1rem;
         margin-left: 5px;
-    }
-}
-
-.icons-container {
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-
-    div {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-        border-radius: 50%;
-        transition: border-radius 0.3s ease-in-out;
-    }
-
-    div:hover {
-        border-radius: 10px;
     }
 }

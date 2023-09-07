@@ -15,9 +15,13 @@ const About = () => {
             breakpoint: { max: 1024, min: 883 },
             items: 5,
         },
-        tabletSmall: {
-            breakpoint: { max: 883, min: 464 },
+        tabletTwo: {
+            breakpoint: { max: 883, min: 695 },
             items: 4,
+        },
+        tabletThree: {
+            breakpoint: { max: 695, min: 464 },
+            items: 3,
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -62,7 +66,7 @@ const About = () => {
                         "desktop",
                         "tablet",
                         "mobile",
-                        "tabletSmall",
+                        "tabletTwo",
                     ]}
                 >
                     <div className="box">

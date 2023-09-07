@@ -191,6 +191,10 @@
   display: none;
 }
 
+.menu-content-tablet img {
+  display: none;
+}
+
 @media (max-width: 880px) {
   .sidebar {
     width: 250px;
@@ -200,15 +204,23 @@
   .sidebar .links {
     display: none;
   }
+  .menu-content-tablet img {
+    width: 180px;
+    display: block;
+  }
   .sidebar::before {
     display: none;
   }
   .links-wrapper-tablet {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     flex-direction: column;
     font-size: 2rem;
+  }
+  .menu-social-links {
+    display: flex;
+    gap: 20px;
   }
 }
 #home {
@@ -283,6 +295,26 @@
   animation: moveup 2s ease-in-out;
 }
 
+.icons-container {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+.icons-container div {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: border-radius 0.3s ease-in-out;
+}
+.icons-container div:hover {
+  border-radius: 10px;
+}
+
 @keyframes moveright {
   0% {
     transform: translateX(-100px);
@@ -301,6 +333,11 @@
   100% {
     transform: translateY(0); /* Use translateY to move vertically */
     opacity: 1;
+  }
+}
+@media (max-width: 880px) {
+  .icons-container {
+    display: none !important;
   }
 }
 @media (max-width: 760px) {
@@ -327,8 +364,8 @@
     position: absolute;
     border: 3px solid white;
     content: "";
-    width: 80px;
-    height: 40px;
+    width: 75px;
+    height: 35px;
   }
   .bryan-logo .logo-title {
     padding-top: 8px;
@@ -347,26 +384,6 @@
     margin-left: 5px;
   }
 }
-.icons-container {
-  display: flex;
-  gap: 20px;
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
-}
-.icons-container div {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  border-radius: 50%;
-  transition: border-radius 0.3s ease-in-out;
-}
-.icons-container div:hover {
-  border-radius: 10px;
-}
-
 #about-page {
   background-color: #212426;
   min-height: 100vh;
@@ -447,9 +464,22 @@
     transform: rotateY(0deg);
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1511px) {
   .about-info img {
     display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .about-info .about-title {
+    font-size: 3.5rem;
+  }
+  #about-page {
+    padding: 75px;
+  }
+}
+@media (max-width: 720px) {
+  #about-page {
+    padding: 30px;
   }
 }
 #portfolio-page {

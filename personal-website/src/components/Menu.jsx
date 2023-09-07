@@ -69,6 +69,23 @@ const Menu = () => {
                     >
                         Portfolio
                     </div>
+                    <div className="menu-social-links">
+                        <div>
+                            <img
+                                src="/images/instagram.svg"
+                                alt="instagram-logo"
+                            />
+                        </div>
+                        <div>
+                            <img src="/images/github.svg" alt="github-logo" />
+                        </div>
+                        <div>
+                            <img
+                                src="/images/linkedin.svg"
+                                alt="linkedin-logo"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div
