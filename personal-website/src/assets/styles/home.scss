@@ -31,6 +31,7 @@ $dark-brown: #212426;
         font-size: 1.3rem;
         margin-top: 30px;
         margin-left: 10px;
+        animation: fadein 5s ease-in-out;
     }
 }
 
@@ -99,29 +100,6 @@ $dark-brown: #212426;
 
     div:hover {
         border-radius: 10px;
-    }
-}
-
-@keyframes moveright {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0); /* Use translateY to move vertically */
-        opacity: 1;
-    }
-}
-
-@keyframes moveup {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0); /* Use translateY to move vertically */
-        opacity: 1;
     }
 }
 
