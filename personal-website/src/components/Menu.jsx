@@ -46,6 +46,30 @@ const Menu = () => {
                 >
                     &lt;Portfolio /&gt;
                 </div>
+
+                <div className="links-wrapper-tablet">
+                    <div
+                        onClick={() => handleNavigate("/")}
+                        className="links-tablet"
+                        id="links"
+                    >
+                        Home
+                    </div>
+                    <div
+                        onClick={() => handleNavigate("/about")}
+                        className="links-tablet"
+                        id="links"
+                    >
+                        About
+                    </div>
+                    <div
+                        onClick={() => handleNavigate("/portfolio")}
+                        className="links-tablet"
+                        id="links"
+                    >
+                        Portfolio
+                    </div>
+                </div>
             </div>
             <div
                 className={`overlay ${isOpen ? "active" : ""}`}

@@ -187,6 +187,30 @@
   transform-origin: top;
 }
 
+.links-wrapper-tablet {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .sidebar {
+    width: 250px;
+    padding: 0;
+    gap: 20px;
+  }
+  .sidebar .links {
+    display: none;
+  }
+  .sidebar::before {
+    display: none;
+  }
+  .links-wrapper-tablet {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+}
 #home {
   height: 100vh;
   position: relative;
@@ -590,6 +614,9 @@
 @media (max-width: 720px) {
   .porfolio-title {
     font-size: 2rem;
+  }
+  .projects {
+    gap: 100px;
   }
   #portfolio-page {
     padding: 30px;

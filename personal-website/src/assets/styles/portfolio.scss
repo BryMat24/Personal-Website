@@ -1,4 +1,5 @@
-@import "variables";
+$dark-red: #98465f;
+$dark-brown: #212426;
 
 #portfolio-page {
     background-color: $dark-brown;
@@ -199,7 +200,9 @@
     .porfolio-title {
         font-size: 2rem;
     }
-
+    .projects {
+        gap: 100px;
+    }
     #portfolio-page {
         padding: 30px;
     }
