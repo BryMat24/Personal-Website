@@ -4,43 +4,55 @@ const Portfolio = () => {
             <h1 className="porfolio-title">&lt;Portfolio /&gt;</h1>
             <section className="projects">
                 <div className="project-wrapper">
-                    <img src="./images/shoppable.png" alt="project-img" />
-                    <div className="project-description">
+                    <img src="./images/ecommerce.png" alt="project-img" />
+                    <div className="project-detail">
                         <div className="project-title">Shoppable</div>
-                        <div className="project-card">
-                            <p></p>
-                        </div>
+                        <p className="project-description">
+                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
+                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
+                            pfaiuhsdfhas;djhfa;sdhf
+                        </p>
+                        <button>VIEW PROJECT</button>
                     </div>
                 </div>
 
                 <div className="project-wrapper">
+                    <div className="project-detail">
+                        <div className="project-title">IMDb clone</div>
+                        <p className="project-description">
+                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
+                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
+                            pfaiuhsdfhas;djhfa;sdhf
+                        </p>
+                        <button>VIEW PROJECT</button>
+                    </div>
                     <img src="./images/imdb-user.png" alt="project-img" />
-                    <div className="project-description">
-                        <div className="project-title">IMDb Clone</div>
-                        <div className="project-card">
-                            <p></p>
-                        </div>
+                </div>
+
+                <div className="project-wrapper">
+                    <img src="./images/test.png" alt="project-img" />
+                    <div className="project-detail">
+                        <div className="project-title">IMDb admin</div>
+                        <p className="project-description">
+                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
+                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
+                            pfaiuhsdfhas;djhfa;sdhf
+                        </p>
+                        <button>VIEW PROJECT</button>
                     </div>
                 </div>
 
                 <div className="project-wrapper">
-                    <img src="./images/imdb-admin.png" alt="project-img" />
-                    <div className="project-description">
-                        <div className="project-title">IMDb Admin</div>
-                        <div className="project-card">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="project-wrapper">
-                    <img src="./images/sudoku.png" alt="project-img" />
-                    <div className="project-description">
+                    <div className="project-detail">
                         <div className="project-title">Sudoku</div>
-                        <div className="project-card">
-                            <p></p>
-                        </div>
+                        <p className="project-description">
+                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
+                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
+                            pfaiuhsdfhas;djhfa;sdhf
+                        </p>
+                        <button>VIEW PROJECT</button>
                     </div>
+                    <img src="./images/sudoku.png" alt="project-img" />
                 </div>
             </section>
         </div>
