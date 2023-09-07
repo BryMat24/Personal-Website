@@ -4,27 +4,23 @@ const Portfolio = () => {
             <h1 className="porfolio-title">&lt;Portfolio /&gt;</h1>
             <section className="projects">
                 <div className="project-wrapper">
-                    <img src="./images/ecommerce.png" alt="project-img" />
                     <div className="project-detail">
-                        <div className="project-title">Shoppable</div>
+                        <div className="project-title">
+                            IMDb clone - User Portal
+                        </div>
                         <p className="project-description">
-                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
-                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
-                            pfaiuhsdfhas;djhfa;sdhf
+                            An extension project to the IMDb admin IMDb. The
+                            IMDb User Portal is your gateway to a world of
+                            cinematic wonders. Dive into a vast collection of
+                            movies, explore hidden gems, watch breathtaking
+                            trailers, and wield the power to shape movie
+                            ratings.
                         </p>
-                        <button>VIEW PROJECT</button>
-                    </div>
-                </div>
-
-                <div className="project-wrapper">
-                    <div className="project-detail">
-                        <div className="project-title">IMDb clone</div>
-                        <p className="project-description">
-                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
-                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
-                            pfaiuhsdfhas;djhfa;sdhf
-                        </p>
-                        <button>VIEW PROJECT</button>
+                        <p>Technologies: React JS, express JS, mongoDB</p>
+                        <div className="project-btn-wrapper">
+                            <button>VIEW CODE</button>
+                            <button>VIEW LIVE</button>
+                        </div>
                     </div>
                     <img src="./images/imdb-user.png" alt="project-img" />
                 </div>
@@ -32,13 +28,45 @@ const Portfolio = () => {
                 <div className="project-wrapper">
                     <img src="./images/test.png" alt="project-img" />
                     <div className="project-detail">
-                        <div className="project-title">IMDb admin</div>
+                        <div className="project-title">
+                            IMDb clone - Admin Portal
+                        </div>
                         <p className="project-description">
-                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
-                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
-                            pfaiuhsdfhas;djhfa;sdhf
+                            An extension to the IMDb clone project. This admin
+                            portal allows admin to perform CRUD (Create, Read,
+                            Update, Delete) operations for movies and genre.
+                            Integrated with google charts for data visualization
+                            including movie ratings, movie-genre distribution
+                            and average rating per genre.
                         </p>
-                        <button>VIEW PROJECT</button>
+                        <p>
+                            Technologies: React JS, Redux, express JS, mongoDB
+                        </p>
+                        <div className="project-btn-wrapper">
+                            <button>VIEW CODE</button>
+                            <button>VIEW LIVE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project-wrapper">
+                    <img src="./images/ecommerce.png" alt="project-img" />
+                    <div className="project-detail">
+                        <div className="project-title">Shoppable</div>
+                        <p className="project-description">
+                            An online shopping platform designed to deliver a
+                            feature-rich and delightful online shopping journey.
+                            Integration with the Midtrans payment gateway API
+                            and Google Maps Geolocation and Place API, to ensure
+                            a streamlined and enjoyable experience for users.
+                        </p>
+                        <p>
+                            Technologies: Vue JS, pinia, express JS, sequelize
+                        </p>
+                        <div className="project-btn-wrapper">
+                            <button>VIEW CODE</button>
+                            <button>VIEW LIVE</button>
+                        </div>
                     </div>
                 </div>
 
@@ -46,11 +74,17 @@ const Portfolio = () => {
                     <div className="project-detail">
                         <div className="project-title">Sudoku</div>
                         <p className="project-description">
-                            fosaijfpoaijdof ouahspdufhaposdhufpa uh dpfiouahspd
-                            ifuhaps iudhf paiushdp faiuhsdpifuhasp iduhf asuhd
-                            pfaiuhsdfhas;djhfa;sdhf
+                            A fun classic sudoku game to challenge yourself with
+                            multiple different levels. For you who enjoys
+                            problem solving like I do, go give it a try !
                         </p>
-                        <button>VIEW PROJECT</button>
+                        <p className="project-description">
+                            Technologies: Java
+                        </p>
+                        <div className="project-btn-wrapper">
+                            <button>VIEW CODE</button>
+                            <button>VIEW LIVE</button>
+                        </div>
                     </div>
                     <img src="./images/sudoku.png" alt="project-img" />
                 </div>
