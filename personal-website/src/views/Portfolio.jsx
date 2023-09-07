@@ -5,9 +5,7 @@ const Portfolio = () => {
             <section className="projects">
                 <div className="project-wrapper">
                     <div className="project-detail">
-                        <div className="project-title">
-                            IMDb clone - User Portal
-                        </div>
+                        <div className="project-title">IMDb User</div>
                         <p className="project-description">
                             An extension project to the IMDb admin IMDb. The
                             IMDb User Portal is your gateway to a world of
@@ -28,16 +26,15 @@ const Portfolio = () => {
                 <div className="project-wrapper">
                     <img src="./images/test.png" alt="project-img" />
                     <div className="project-detail">
-                        <div className="project-title">
-                            IMDb clone - Admin Portal
-                        </div>
+                        <div className="project-title">IMDb Admin</div>
                         <p className="project-description">
-                            An extension to the IMDb clone project. This admin
-                            portal allows admin to perform CRUD (Create, Read,
-                            Update, Delete) operations for movies and genre.
-                            Integrated with google charts for data visualization
-                            including movie ratings, movie-genre distribution
-                            and average rating per genre.
+                            An extension to the IMDb clone project. This
+                            desktop-based admin portal allows admin to perform
+                            CRUD (Create, Read, Update, Delete) operations for
+                            movies and genre. Integrated with google charts for
+                            data visualization including movie ratings,
+                            movie-genre distribution and average rating per
+                            genre.
                         </p>
                         <p>
                             Technologies: React JS, Redux, express JS, mongoDB

@@ -431,7 +431,7 @@
 #portfolio-page {
   background-color: #212426;
   min-height: 100vh;
-  padding: 100px 100px 100px 100px;
+  padding: 100px;
   position: relative;
 }
 
@@ -439,7 +439,7 @@
   font-size: 5rem;
   color: #98465f;
   font-weight: bold;
-  animation: moveright 1.5s ease-in;
+  animation: rotate 1s ease-in;
   display: inline-block;
   width: max-content;
 }
@@ -451,66 +451,132 @@
   gap: 130px;
   object-fit: cover;
 }
-.projects .project-wrapper {
+
+.project-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 50px;
 }
-.projects .project-wrapper img {
-  object-fit: cover;
-  border-radius: 8px;
+.project-wrapper img {
+  object-fit: contain;
+  border-radius: 10px;
   width: 100%;
-  height: 400px;
 }
-.projects .project-wrapper .project-detail {
+
+.project-detail {
   display: flex;
   flex-direction: column;
   color: white;
   justify-content: center;
   gap: 20px;
 }
-.projects .project-wrapper .project-detail .project-title {
+.project-detail .project-title {
   font-size: 2.5rem;
   font-weight: bold;
 }
-.projects .project-wrapper .project-detail .project-description {
+.project-detail .project-description {
   font-size: 1.1rem;
 }
-.projects .project-wrapper .project-detail .project-btn-wrapper {
+.project-detail .project-btn-wrapper {
   display: flex;
   gap: 25px;
 }
-.projects .project-wrapper .project-detail button {
+.project-detail button {
   border: 3px solid #98465f;
   background-color: transparent;
   color: white;
   padding: 10px 30px;
 }
-.projects .project-wrapper:nth-child(odd) img {
+
+.project-wrapper:nth-child(odd) img {
   grid-area: 1/1/1/7;
 }
-.projects .project-wrapper:nth-child(odd) .project-detail {
+.project-wrapper:nth-child(odd) .project-detail {
   grid-area: 1/7/1/13;
 }
-.projects .project-wrapper:nth-child(odd) .project-detail {
+.project-wrapper:nth-child(odd) .project-detail {
   text-align: left;
 }
-.projects .project-wrapper:nth-child(odd) .project-detail .project-btn-wrapper {
+.project-wrapper:nth-child(odd) .project-detail .project-btn-wrapper {
   justify-content: start;
 }
-.projects .project-wrapper:nth-child(even) img {
+
+.project-wrapper:nth-child(even) img {
   grid-area: 1/7/1/13;
 }
-.projects .project-wrapper:nth-child(even) .project-detail {
+.project-wrapper:nth-child(even) .project-detail {
   grid-area: 1/1/1/7;
 }
-.projects .project-wrapper:nth-child(even) .project-detail {
+.project-wrapper:nth-child(even) .project-detail {
   text-align: right;
 }
-.projects .project-wrapper:nth-child(even) .project-detail .project-btn-wrapper {
+.project-wrapper:nth-child(even) .project-detail .project-btn-wrapper {
   justify-content: end;
 }
 
+@media (max-width: 1250px) {
+  #portfolio-page {
+    padding: 75px;
+  }
+  .project-detail .project-title {
+    font-size: 2rem;
+  }
+  .project-detail .project-description {
+    font-size: 1rem;
+  }
+  .project-detail .project-btn-wrapper {
+    display: flex;
+    gap: 25px;
+  }
+  .project-detail button {
+    border: 3px solid #98465f;
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+  }
+  .project-wrapper:nth-child(even) img {
+    grid-area: 1/6/1/13;
+  }
+  .project-wrapper:nth-child(even) .project-detail {
+    grid-area: 1/1/1/6;
+  }
+  .project-wrapper:nth-child(odd) img {
+    grid-area: 1/1/1/8;
+  }
+  .project-wrapper:nth-child(odd) .project-detail {
+    grid-area: 1/8/1/13;
+  }
+}
+@media (max-width: 1080px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-wrapper:nth-child(even) img,
+  .project-wrapper:nth-child(odd) img {
+    order: 1;
+  }
+  .project-wrapper:nth-child(even) .project-detail,
+  .project-wrapper:nth-child(odd) .project-detail {
+    order: 2;
+    text-align: start;
+  }
+  .project-wrapper:nth-child(even) .project-detail .project-btn-wrapper,
+  .project-wrapper:nth-child(odd) .project-detail .project-btn-wrapper {
+    justify-content: start;
+  }
+  .porfolio-title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .porfolio-title {
+    font-size: 2rem;
+  }
+  #portfolio-page {
+    padding: 30px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
