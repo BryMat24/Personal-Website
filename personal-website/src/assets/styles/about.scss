@@ -95,6 +95,10 @@ $dark-brown: #212426;
     .about-info img {
         display: none;
     }
+
+    #about-page {
+        padding: 75px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -110,5 +114,15 @@ $dark-brown: #212426;
 @media (max-width: 720px) {
     #about-page {
         padding: 30px;
+    }
+
+    .about-info .about-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 463px) {
+    .about-info .about-title {
+        font-size: 2.5rem;
     }
 }

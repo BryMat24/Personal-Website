@@ -198,12 +198,18 @@ $dark-brown: #212426;
 
 @media (max-width: 720px) {
     .porfolio-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .projects {
         gap: 100px;
     }
     #portfolio-page {
         padding: 30px;
+    }
+}
+
+@media (max-width: 463px) {
+    .porfolio-title {
+        font-size: 2.5rem;
     }
 }

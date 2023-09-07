@@ -468,6 +468,9 @@
   .about-info img {
     display: none;
   }
+  #about-page {
+    padding: 75px;
+  }
 }
 @media (max-width: 1080px) {
   .about-info .about-title {
@@ -480,6 +483,14 @@
 @media (max-width: 720px) {
   #about-page {
     padding: 30px;
+  }
+  .about-info .about-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 463px) {
+  .about-info .about-title {
+    font-size: 2.5rem;
   }
 }
 #portfolio-page {
@@ -643,13 +654,18 @@
 }
 @media (max-width: 720px) {
   .porfolio-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .projects {
     gap: 100px;
   }
   #portfolio-page {
     padding: 30px;
+  }
+}
+@media (max-width: 463px) {
+  .porfolio-title {
+    font-size: 2.5rem;
   }
 }
 * {
