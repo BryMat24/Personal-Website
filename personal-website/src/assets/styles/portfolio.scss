@@ -74,6 +74,11 @@ $dark-brown: #212426;
         grid-area: 1/7/1/13;
     }
 
+    .project-image-container {
+        grid-area: 1/1/1/7;
+        position: relative;
+    }
+
     .project-detail {
         text-align: left;
 
@@ -146,6 +151,7 @@ $dark-brown: #212426;
         img {
             grid-area: 1/1/1/8;
         }
+
         .project-detail {
             grid-area: 1/8/1/13;
         }
@@ -194,6 +200,9 @@ $dark-brown: #212426;
             color: $dark-red;
         }
     }
+}
+
+.image-background {
 }
 
 @media (max-width: 720px) {

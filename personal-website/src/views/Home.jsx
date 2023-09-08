@@ -37,7 +37,9 @@ const Home = () => {
                 <div>Bryan</div>
                 <div>Matthew</div>
                 <div>Student / Aspiring Software Engineer</div>
-                <button>Download CV</button>
+                <a href="/CV.pdf" download>
+                    Download CV
+                </a>
             </section>
             <div className="icons-container">
                 <div>

@@ -21,7 +21,8 @@ $dark-brown: #212426;
         margin-left: 10px;
     }
 
-    button {
+    a {
+        display: inline-block;
         background-color: transparent;
         border: none;
         color: white;
@@ -32,6 +33,7 @@ $dark-brown: #212426;
         margin-top: 30px;
         margin-left: 10px;
         animation: fadein 5s ease-in-out;
+        text-decoration: none;
     }
 }
 
