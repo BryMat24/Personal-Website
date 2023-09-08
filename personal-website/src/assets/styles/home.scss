@@ -4,6 +4,7 @@ $dark-brown: #212426;
 #home {
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -21,7 +22,7 @@ $dark-brown: #212426;
         margin-left: 10px;
     }
 
-    a {
+    .download-cv-btn {
         display: inline-block;
         background-color: transparent;
         border: none;
@@ -34,6 +35,20 @@ $dark-brown: #212426;
         margin-left: 10px;
         animation: fadein 5s ease-in-out;
         text-decoration: none;
+        position: relative;
+    }
+
+    .download-cv-btn::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        outline: 2px solid $dark-red;
+        outline-offset: 5px;
+        outline-width: 2px;
+        animation: pulse 1s infinite;
     }
 }
 

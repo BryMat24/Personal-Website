@@ -23,14 +23,11 @@ const Portfolio = () => {
                             <button>VIEW LIVE</button>
                         </div>
                     </div>
-                    <div className="project-image-container">
-                        <div className="image-background"></div>
-                        <img
-                            src="./images/imdb-user.png"
-                            alt="project-img"
-                            id="test"
-                        />
-                    </div>
+                    <img
+                        src="./images/imdb-user.png"
+                        alt="project-img"
+                        id="test"
+                    />
                 </div>
 
                 <div className="project-wrapper">

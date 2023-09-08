@@ -37,14 +37,11 @@ const Home = () => {
                 <div>Bryan</div>
                 <div>Matthew</div>
                 <div>Student / Aspiring Software Engineer</div>
-                <a href="/CV.pdf" download>
+                <a href="/CV.pdf" download className="download-cv-btn">
                     Download CV
                 </a>
             </section>
             <div className="icons-container">
-                <div>
-                    <img src="/images/instagram.svg" alt="instagram-logo" />
-                </div>
                 <div>
                     <img src="/images/github.svg" alt="github-logo" />
                 </div>
