@@ -19,8 +19,12 @@ const Portfolio = () => {
                         </p>
                         <p>Technologies: React JS, express JS, mongoDB</p>
                         <div className="project-btn-wrapper">
-                            <button>VIEW CODE</button>
-                            <button>VIEW LIVE</button>
+                            <button>
+                                <span>VIEW CODE</span>
+                            </button>
+                            <button>
+                                <span>VIEW LIVE</span>
+                            </button>
                         </div>
                     </div>
                     <div className="project-image-container">
@@ -49,8 +53,12 @@ const Portfolio = () => {
                             Technologies: React JS, Redux, express JS, mongoDB
                         </p>
                         <div className="project-btn-wrapper">
-                            <button>VIEW CODE</button>
-                            <button>VIEW LIVE</button>
+                            <button>
+                                <span>VIEW CODE</span>
+                            </button>
+                            <button>
+                                <span>VIEW LIVE</span>
+                            </button>
                         </div>
                     </div>
                     <div className="project-image-container">
@@ -76,8 +84,12 @@ const Portfolio = () => {
                             Technologies: Vue JS, pinia, express JS, sequelize
                         </p>
                         <div className="project-btn-wrapper">
-                            <button>VIEW CODE</button>
-                            <button>VIEW LIVE</button>
+                            <button>
+                                <span>VIEW CODE</span>
+                            </button>
+                            <button>
+                                <span>VIEW LIVE</span>
+                            </button>
                         </div>
                     </div>
                     <div className="project-image-container">
@@ -101,8 +113,12 @@ const Portfolio = () => {
                             Technologies: Java
                         </p>
                         <div className="project-btn-wrapper">
-                            <button>VIEW CODE</button>
-                            <button>VIEW LIVE</button>
+                            <button>
+                                <span>VIEW CODE</span>
+                            </button>
+                            <button>
+                                <span>VIEW LIVE</span>
+                            </button>
                         </div>
                     </div>
                     <div className="project-image-container">

@@ -543,15 +543,38 @@
 .project-detail .project-description {
   font-size: 1.1rem;
 }
-.project-detail .project-btn-wrapper {
+
+.project-btn-wrapper {
   display: flex;
   gap: 25px;
 }
-.project-detail button {
+.project-btn-wrapper button {
   border: 3px solid #98465f;
   background-color: transparent;
   color: white;
   padding: 10px 30px;
+  position: relative;
+  transition: 0.5s all ease;
+}
+.project-btn-wrapper button span {
+  z-index: 1;
+  position: relative;
+}
+.project-btn-wrapper button::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 1;
+  content: "";
+  background-color: #98465f;
+}
+.project-btn-wrapper button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
 
 .project-wrapper:nth-child(odd) .project-detail {

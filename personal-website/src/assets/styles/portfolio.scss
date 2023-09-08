@@ -45,17 +45,42 @@ $dark-brown: #212426;
     .project-description {
         font-size: 1.1rem;
     }
+}
 
-    .project-btn-wrapper {
-        display: flex;
-        gap: 25px;
-    }
+.project-btn-wrapper {
+    display: flex;
+    gap: 25px;
 
     button {
         border: 3px solid $dark-red;
         background-color: transparent;
         color: white;
         padding: 10px 30px;
+        position: relative;
+        transition: 0.5s all ease;
+    }
+
+    button span {
+        z-index: 1;
+        position: relative;
+    }
+
+    button::before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 1;
+        content: "";
+        background-color: $dark-red;
+    }
+
+    button:hover::before {
+        left: 0;
+        right: 0;
+        opacity: 1;
     }
 }
 
