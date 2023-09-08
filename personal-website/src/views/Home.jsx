@@ -38,12 +38,14 @@ const Home = () => {
                 <div>Matthew</div>
                 <div>Student / Aspiring Software Engineer</div>
                 <a href="/CV.pdf" download className="download-cv-btn">
-                    Download CV
+                    <span>Download CV</span>
                 </a>
             </section>
             <div className="icons-container">
                 <div>
-                    <img src="/images/github.svg" alt="github-logo" />
+                    <a href="https://github.com/BryMat24" alt="github-link">
+                        <img src="/images/github.svg" alt="github-logo" />
+                    </a>
                 </div>
                 <div>
                     <img src="/images/linkedin.svg" alt="linkedin-logo" />

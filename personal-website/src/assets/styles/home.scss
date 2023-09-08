@@ -30,12 +30,16 @@ $dark-brown: #212426;
         border: 3px solid $dark-red;
         font-weight: 600;
         padding: 10px 30px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 30px;
         margin-left: 10px;
         animation: fadein 5s ease-in-out;
         text-decoration: none;
         position: relative;
+        text-align: center;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
     }
 
     .download-cv-btn::before {
@@ -49,6 +53,31 @@ $dark-brown: #212426;
         outline-offset: 5px;
         outline-width: 2px;
         animation: pulse 1s infinite;
+    }
+
+    .download-cv-btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .download-cv-btn span::after {
+        content: "\2193";
+        position: absolute;
+        top: 0;
+        right: -30px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .download-cv-btn:hover span {
+        padding-right: 5px;
+    }
+
+    .download-cv-btn:hover span::after {
+        opacity: 1;
+        right: -15px;
     }
 }
 

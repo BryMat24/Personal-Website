@@ -22,19 +22,12 @@ $dark-brown: #212426;
     display: flex;
     flex-direction: column;
     gap: 130px;
-    object-fit: cover;
 }
 
 .project-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 50px;
-
-    img {
-        object-fit: contain;
-        border-radius: 10px;
-        width: 100%;
-    }
 }
 
 .project-detail {
@@ -67,9 +60,6 @@ $dark-brown: #212426;
 }
 
 .project-wrapper:nth-child(odd) {
-    img {
-        grid-area: 1/1/1/7;
-    }
     .project-detail {
         grid-area: 1/7/1/13;
     }
@@ -77,6 +67,26 @@ $dark-brown: #212426;
     .project-image-container {
         grid-area: 1/1/1/7;
         position: relative;
+
+        .project-image-background {
+            background-color: $dark-red;
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+        }
+
+        img {
+            z-index: 1;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        img:hover {
+            transform: translate(8px, 8px);
+        }
     }
 
     .project-detail {
@@ -89,12 +99,33 @@ $dark-brown: #212426;
 }
 
 .project-wrapper:nth-child(even) {
-    img {
-        grid-area: 1/7/1/13;
-    }
-
     .project-detail {
         grid-area: 1/1/1/7;
+    }
+
+    .project-image-container {
+        grid-area: 1/7/1/13;
+        position: relative;
+
+        .project-image-background {
+            background-color: $dark-red;
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+        }
+
+        img {
+            z-index: 1;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        img:hover {
+            transform: translate(-8px, -8px);
+        }
     }
 
     .project-detail {
@@ -138,7 +169,7 @@ $dark-brown: #212426;
     }
 
     .project-wrapper:nth-child(even) {
-        img {
+        .project-image-container {
             grid-area: 1/6/1/13;
         }
 
@@ -148,7 +179,7 @@ $dark-brown: #212426;
     }
 
     .project-wrapper:nth-child(odd) {
-        img {
+        .project-image-container {
             grid-area: 1/1/1/8;
         }
 
@@ -167,8 +198,12 @@ $dark-brown: #212426;
 
     .project-wrapper:nth-child(even),
     .project-wrapper:nth-child(odd) {
-        img {
+        .project-image-container {
             order: 1;
+
+            .project-image-background {
+                display: none;
+            }
         }
 
         .project-detail {
@@ -200,9 +235,6 @@ $dark-brown: #212426;
             color: $dark-red;
         }
     }
-}
-
-.image-background {
 }
 
 @media (max-width: 720px) {

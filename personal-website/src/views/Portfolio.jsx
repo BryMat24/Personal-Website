@@ -23,18 +23,17 @@ const Portfolio = () => {
                             <button>VIEW LIVE</button>
                         </div>
                     </div>
-                    <img
-                        src="./images/imdb-user.png"
-                        alt="project-img"
-                        id="test"
-                    />
+                    <div className="project-image-container">
+                        <img src="./images/imdb-user.png" alt="project-img" />
+                        <div className="project-image-background"></div>
+                    </div>
                 </div>
 
                 <div className="project-wrapper">
                     <div className="project-title-tablet">
                         <span>02.</span> IMDb Admin
                     </div>
-                    <img src="./images/test.png" alt="project-img" />
+
                     <div className="project-detail">
                         <div className="project-title">IMDb Admin</div>
                         <p className="project-description">
@@ -54,13 +53,16 @@ const Portfolio = () => {
                             <button>VIEW LIVE</button>
                         </div>
                     </div>
+                    <div className="project-image-container">
+                        <img src="./images/test.png" alt="project-img" />
+                        <div className="project-image-background"></div>
+                    </div>
                 </div>
 
                 <div className="project-wrapper">
                     <div className="project-title-tablet">
                         <span>03.</span> Shoppable
                     </div>
-                    <img src="./images/ecommerce.png" alt="project-img" />
                     <div className="project-detail">
                         <div className="project-title">Shoppable</div>
                         <p className="project-description">
@@ -77,6 +79,10 @@ const Portfolio = () => {
                             <button>VIEW CODE</button>
                             <button>VIEW LIVE</button>
                         </div>
+                    </div>
+                    <div className="project-image-container">
+                        <img src="./images/ecommerce.png" alt="project-img" />
+                        <div className="project-image-background"></div>
                     </div>
                 </div>
 
@@ -99,7 +105,10 @@ const Portfolio = () => {
                             <button>VIEW LIVE</button>
                         </div>
                     </div>
-                    <img src="./images/sudoku.png" alt="project-img" />
+                    <div className="project-image-container">
+                        <img src="./images/sudoku.png" alt="project-img" />
+                        <div className="project-image-background"></div>
+                    </div>
                 </div>
             </section>
         </div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #menu {
   position: fixed;
   top: 30px;
@@ -250,12 +251,16 @@
   border: 3px solid #98465f;
   font-weight: 600;
   padding: 10px 30px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-top: 30px;
   margin-left: 10px;
   animation: fadein 5s ease-in-out;
   text-decoration: none;
   position: relative;
+  text-align: center;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .hero .download-cv-btn::before {
   content: "";
@@ -268,6 +273,27 @@
   outline-offset: 5px;
   outline-width: 2px;
   animation: pulse 1s infinite;
+}
+.hero .download-cv-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.hero .download-cv-btn span::after {
+  content: "↓";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.hero .download-cv-btn:hover span {
+  padding-right: 5px;
+}
+.hero .download-cv-btn:hover span::after {
+  opacity: 1;
+  right: -15px;
 }
 
 .bryan-logo {
@@ -495,18 +521,12 @@
   display: flex;
   flex-direction: column;
   gap: 130px;
-  object-fit: cover;
 }
 
 .project-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 50px;
-}
-.project-wrapper img {
-  object-fit: contain;
-  border-radius: 10px;
-  width: 100%;
 }
 
 .project-detail {
@@ -534,15 +554,29 @@
   padding: 10px 30px;
 }
 
-.project-wrapper:nth-child(odd) img {
-  grid-area: 1/1/1/7;
-}
 .project-wrapper:nth-child(odd) .project-detail {
   grid-area: 1/7/1/13;
 }
 .project-wrapper:nth-child(odd) .project-image-container {
   grid-area: 1/1/1/7;
   position: relative;
+}
+.project-wrapper:nth-child(odd) .project-image-container .project-image-background {
+  background-color: #98465f;
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+}
+.project-wrapper:nth-child(odd) .project-image-container img {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.project-wrapper:nth-child(odd) .project-image-container img:hover {
+  transform: translate(8px, 8px);
 }
 .project-wrapper:nth-child(odd) .project-detail {
   text-align: left;
@@ -551,11 +585,29 @@
   justify-content: start;
 }
 
-.project-wrapper:nth-child(even) img {
-  grid-area: 1/7/1/13;
-}
 .project-wrapper:nth-child(even) .project-detail {
   grid-area: 1/1/1/7;
+}
+.project-wrapper:nth-child(even) .project-image-container {
+  grid-area: 1/7/1/13;
+  position: relative;
+}
+.project-wrapper:nth-child(even) .project-image-container .project-image-background {
+  background-color: #98465f;
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+}
+.project-wrapper:nth-child(even) .project-image-container img {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.project-wrapper:nth-child(even) .project-image-container img:hover {
+  transform: translate(-8px, -8px);
 }
 .project-wrapper:nth-child(even) .project-detail {
   text-align: right;
@@ -588,13 +640,13 @@
     color: white;
     padding: 10px 30px;
   }
-  .project-wrapper:nth-child(even) img {
+  .project-wrapper:nth-child(even) .project-image-container {
     grid-area: 1/6/1/13;
   }
   .project-wrapper:nth-child(even) .project-detail {
     grid-area: 1/1/1/6;
   }
-  .project-wrapper:nth-child(odd) img {
+  .project-wrapper:nth-child(odd) .project-image-container {
     grid-area: 1/1/1/8;
   }
   .project-wrapper:nth-child(odd) .project-detail {
@@ -607,9 +659,13 @@
     flex-direction: column;
     gap: 30px;
   }
-  .project-wrapper:nth-child(even) img,
-  .project-wrapper:nth-child(odd) img {
+  .project-wrapper:nth-child(even) .project-image-container,
+  .project-wrapper:nth-child(odd) .project-image-container {
     order: 1;
+  }
+  .project-wrapper:nth-child(even) .project-image-container .project-image-background,
+  .project-wrapper:nth-child(odd) .project-image-container .project-image-background {
+    display: none;
   }
   .project-wrapper:nth-child(even) .project-detail,
   .project-wrapper:nth-child(odd) .project-detail {
