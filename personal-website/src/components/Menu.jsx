@@ -82,10 +82,15 @@ const Menu = () => {
                             </a>
                         </div>
                         <div>
-                            <img
-                                src="/images/linkedin.svg"
-                                alt="linkedin-logo"
-                            />
+                            <a
+                                href="https://www.linkedin.com/in/bryan-rustardy-193533290/"
+                                alt="linkedin-link"
+                            >
+                                <img
+                                    src="/images/linkedin.svg"
+                                    alt="linkedin-logo"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
