@@ -820,5 +820,11 @@
     opacity: 0;
   }
 }
+@media (max-width: 1080px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=output.css.map */
