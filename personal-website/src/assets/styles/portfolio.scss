@@ -51,21 +51,22 @@ $dark-brown: #212426;
     display: flex;
     gap: 25px;
 
-    button {
+    a {
         border: 3px solid $dark-red;
         background-color: transparent;
         color: white;
         padding: 10px 30px;
         position: relative;
         transition: 0.5s all ease;
+        text-decoration: none;
     }
 
-    button span {
+    a span {
         z-index: 1;
         position: relative;
     }
 
-    button::before {
+    a::before {
         transition: 0.5s all ease;
         position: absolute;
         top: 0;
@@ -77,7 +78,7 @@ $dark-brown: #212426;
         background-color: $dark-red;
     }
 
-    button:hover::before {
+    a:hover::before {
         left: 0;
         right: 0;
         opacity: 1;
@@ -259,6 +260,10 @@ $dark-brown: #212426;
             font-size: 1.5rem;
             color: $dark-red;
         }
+    }
+
+    .project-image-container img:hover {
+        transform: none !important;
     }
 }
 

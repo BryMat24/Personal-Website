@@ -64,7 +64,7 @@
   will-change: transform;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   background: #98465f;
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -231,7 +231,7 @@
 }
 
 .hero {
-  padding-top: 220px;
+  padding-top: 250px;
   padding-left: 80px;
   color: white;
 }
@@ -371,7 +371,7 @@
 }
 @media (max-width: 500px) {
   .hero {
-    padding-top: 220px;
+    padding-top: 350px;
     padding-left: 30px;
     color: white;
   }
@@ -548,19 +548,20 @@
   display: flex;
   gap: 25px;
 }
-.project-btn-wrapper button {
+.project-btn-wrapper a {
   border: 3px solid #98465f;
   background-color: transparent;
   color: white;
   padding: 10px 30px;
   position: relative;
   transition: 0.5s all ease;
+  text-decoration: none;
 }
-.project-btn-wrapper button span {
+.project-btn-wrapper a span {
   z-index: 1;
   position: relative;
 }
-.project-btn-wrapper button::before {
+.project-btn-wrapper a::before {
   transition: 0.5s all ease;
   position: absolute;
   top: 0;
@@ -571,7 +572,7 @@
   content: "";
   background-color: #98465f;
 }
-.project-btn-wrapper button:hover::before {
+.project-btn-wrapper a:hover::before {
   left: 0;
   right: 0;
   opacity: 1;
@@ -714,6 +715,9 @@
   .project-title-tablet span {
     font-size: 1.5rem;
     color: #98465f;
+  }
+  .project-image-container img:hover {
+    transform: none !important;
   }
 }
 @media (max-width: 720px) {

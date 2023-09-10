@@ -19,12 +19,12 @@ const Portfolio = () => {
                         </p>
                         <p>Technologies: React JS, express JS, mongoDB</p>
                         <div className="project-btn-wrapper">
-                            <button>
+                            <a href="https://github.com/BryMat24/IMDb-clone-client">
                                 <span>VIEW CODE</span>
-                            </button>
-                            <button>
+                            </a>
+                            <a href="https://imdb-user.web.app/">
                                 <span>VIEW LIVE</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="project-image-container">
@@ -53,12 +53,12 @@ const Portfolio = () => {
                             Technologies: React JS, Redux, express JS, mongoDB
                         </p>
                         <div className="project-btn-wrapper">
-                            <button>
+                            <a href="https://github.com/BryMat24/IMDb-clone-client">
                                 <span>VIEW CODE</span>
-                            </button>
-                            <button>
+                            </a>
+                            <a href="https://imdb-admin.web.app">
                                 <span>VIEW LIVE</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="project-image-container">
@@ -84,12 +84,12 @@ const Portfolio = () => {
                             Technologies: Vue JS, pinia, express JS, sequelize
                         </p>
                         <div className="project-btn-wrapper">
-                            <button>
+                            <a href="https://github.com/BryMat24/ecommerce-client">
                                 <span>VIEW CODE</span>
-                            </button>
-                            <button>
+                            </a>
+                            <a href="https://ecommerce-de057.web.app/">
                                 <span>VIEW LIVE</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="project-image-container">
@@ -113,12 +113,9 @@ const Portfolio = () => {
                             Technologies: Java
                         </p>
                         <div className="project-btn-wrapper">
-                            <button>
+                            <a href="https://github.com/BryMat24/sudoku">
                                 <span>VIEW CODE</span>
-                            </button>
-                            <button>
-                                <span>VIEW LIVE</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="project-image-container">

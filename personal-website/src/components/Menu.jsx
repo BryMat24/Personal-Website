@@ -71,7 +71,15 @@ const Menu = () => {
                     </div>
                     <div className="menu-social-links">
                         <div>
-                            <img src="/images/github.svg" alt="github-logo" />
+                            <a
+                                href="https://github.com/BryMat24"
+                                alt="github-link"
+                            >
+                                <img
+                                    src="/images/github.svg"
+                                    alt="github-logo"
+                                />
+                            </a>
                         </div>
                         <div>
                             <img
