@@ -64,7 +64,7 @@
   will-change: transform;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   background: #98465f;
-  max-width: 250px;
+  max-width: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -371,7 +371,7 @@
 }
 @media (max-width: 500px) {
   .hero {
-    padding-top: 350px;
+    padding-top: 200px;
     padding-left: 30px;
     color: white;
   }
