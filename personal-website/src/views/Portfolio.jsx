@@ -5,7 +5,35 @@ const Portfolio = () => {
             <section className="projects">
                 <div className="project-wrapper">
                     <div className="project-title-tablet">
-                        <span>01.</span> IMDb User
+                        <span>01.</span> Sort Viz
+                    </div>
+                    <div className="project-detail">
+                        <div className="project-title">SortViz</div>
+                        <p className="project-description">
+                            A sorting visualizer tool to aid learning
+                            experience. Includes four sorting algorithms which
+                            includes mergesort, heapsort, quicksort and bubble
+                            sort.
+                        </p>
+                        <p>Technologies: React JS, Tailwind CSS</p>
+                        <div className="project-btn-wrapper">
+                            <a href="https://github.com/BryMat24/SortViz">
+                                <span>VIEW CODE</span>
+                            </a>
+                            <a href="https://sortviz.web.app/">
+                                <span>VIEW LIVE</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project-image-container">
+                        <img src="./images/sortviz.png" alt="project-img" />
+                        <div className="project-image-background"></div>
+                    </div>
+                </div>
+
+                <div className="project-wrapper">
+                    <div className="project-title-tablet">
+                        <span>02.</span> IMDb User
                     </div>
                     <div className="project-detail">
                         <div className="project-title">IMDb User</div>
@@ -35,7 +63,7 @@ const Portfolio = () => {
 
                 <div className="project-wrapper">
                     <div className="project-title-tablet">
-                        <span>02.</span> IMDb Admin
+                        <span>03.</span> IMDb Admin
                     </div>
 
                     <div className="project-detail">
@@ -69,7 +97,7 @@ const Portfolio = () => {
 
                 <div className="project-wrapper">
                     <div className="project-title-tablet">
-                        <span>03.</span> Shoppable
+                        <span>04.</span> Shoppable
                     </div>
                     <div className="project-detail">
                         <div className="project-title">Shoppable</div>
@@ -100,7 +128,7 @@ const Portfolio = () => {
 
                 <div className="project-wrapper">
                     <div className="project-title-tablet">
-                        <span>04.</span> Sudoku
+                        <span>05.</span> Sudoku
                     </div>
                     <div className="project-detail">
                         <div className="project-title">Sudoku</div>

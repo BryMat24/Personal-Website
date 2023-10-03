@@ -37,7 +37,7 @@ const Home = () => {
                 <div>Bryan</div>
                 <div>Matthew</div>
                 <div>Student / Aspiring Software Engineer</div>
-                <a href="/CV.pdf" download className="download-cv-btn">
+                <a href="/Bryan_CV" download className="download-cv-btn">
                     <span>Download CV</span>
                 </a>
             </section>
@@ -49,7 +49,7 @@ const Home = () => {
                 </div>
                 <div>
                     <a
-                        href="https://www.linkedin.com/in/bryan-rustardy-193533290/"
+                        href="https://www.linkedin.com/in/bryan-matthew-rustardy-193533290/"
                         alt="linkedin-link"
                     >
                         <img src="/images/linkedin.svg" alt="linkedin-logo" />
