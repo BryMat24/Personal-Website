@@ -37,7 +37,7 @@ const Home = () => {
                 <div>Bryan</div>
                 <div>Matthew</div>
                 <div>Student / Aspiring Software Engineer</div>
-                <a href="/Bryan_CV" download className="download-cv-btn">
+                <a href="bryanCV.pdf" download className="download-cv-btn">
                     <span>Download CV</span>
                 </a>
             </section>
