@@ -432,7 +432,7 @@
   position: absolute;
   right: 100px;
   top: 40px;
-  height: 700px;
+  height: 600px;
   z-index: 1;
   animation: fadein 2.5s ease-in-out;
 }
@@ -802,6 +802,10 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   cursor: none;
+}
+
+body {
+  overscroll-behavior: none;
 }
 
 .links {
