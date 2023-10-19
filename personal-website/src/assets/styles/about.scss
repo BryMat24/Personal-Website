@@ -11,7 +11,7 @@ $dark-brown: #212426;
 .about-info {
     display: flex;
     flex-direction: column;
-    max-width: 900px;
+    width: 100%;
     gap: 20px;
 
     .about-title {
@@ -23,24 +23,24 @@ $dark-brown: #212426;
         width: max-content;
     }
 
-    .about-description {
-        max-width: 900px;
-        animation: fadein 1.5s ease-in;
-
-        p {
-            color: white;
-            margin-top: 30px;
-            font-size: 1.3rem;
-        }
-    }
-
-    img {
+    .bryan-image {
         position: absolute;
         right: 100px;
         top: 40px;
-        height: 650px;
+        height: 700px;
         z-index: 1;
         animation: fadein 2.5s ease-in-out;
+    }
+}
+
+.about-description {
+    max-width: 900px;
+    animation: fadein 1.5s ease-in;
+
+    p {
+        color: white;
+        margin-top: 30px;
+        font-size: 1.3rem;
     }
 }
 
@@ -71,13 +71,33 @@ $dark-brown: #212426;
     }
 }
 
+.developer-image {
+    display: none;
+}
+
+.skills-list {
+    display: none;
+}
+
 @media (max-width: 1511px) {
-    .about-info img {
+    .bryan-image {
         display: none;
     }
 
     #about-page {
         padding: 75px;
+        align-items: center;
+    }
+
+    .developer-image {
+        display: block;
+        margin: 10px auto;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .about-description {
+        width: 100%;
     }
 }
 
@@ -99,10 +119,59 @@ $dark-brown: #212426;
     .about-info .about-title {
         font-size: 3rem;
     }
+
+    .about-description p {
+        font-size: 1rem;
+    }
+
+    .techstack {
+        display: none;
+    }
+
+    .skills-list {
+        margin-top: 50px;
+        display: block;
+
+        p {
+            color: white;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            color: white;
+            justify-content: center;
+            font-size: 1rem;
+
+            li {
+                padding: 5px 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 463px) {
     .about-info .about-title {
         font-size: 2.5rem;
+    }
+
+    .about-description p {
+        text-align: center;
     }
 }
